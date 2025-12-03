@@ -1,5 +1,20 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
+    background: #25a244;
+    display: flex;
+}
+
+.card {
+    display: flex;
     background: white;
+    width: 45%;
+    min-height: 60%;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
 }

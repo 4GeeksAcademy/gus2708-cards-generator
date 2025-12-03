@@ -5,7 +5,7 @@
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
@@ -13,23 +13,29 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container mt-4 w-25" style="max-width: 330px; min-width: 252px;">
+      <div class="row d-flex bg-light rounded">
+        <!-- First Icon -->
+        <div class="col-12 d-flex pb-4">
+          <p class="icon fs-1 me-auto">♦</p>
+        </div>
+        <div class="col-12 d-flex">
+          <p id="number" class="fs-1 mx-auto py-5">2</p>
+        </div>
+        <!-- Second Icon -->
+        <div class="col-12 d-flex pt-4">
+          <p class="icon fs-1 ms-auto">♦</p>
+        </div>
+      </div>
+      
+      <div class="row mt-4">
+        <input id="changeButton" type="button" value="Change" onclick="randomizeCard()" class="btn btn-light w-75 mx-auto">
       </div>
     </div>
-
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script type="module" src="/app.js"></script>
   </body>
 </html>
